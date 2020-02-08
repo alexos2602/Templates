@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Effects on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fotter.css">
+</head>
+<body>
+    <section>
+        <p>Algún día entenderé como funciona esto</p>
+        <span class="curve">
+            <img src="curve.png" alt="">
+        </span>
+    </section>
+
+    <footer>
+        <span class="titulo">Agradecimientos a:</span>
+        <a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/featured" target="blank">Online Tutorials</a>
+        <a href="../index.html" class="titulo">Regresar</a>
+    </footer>
+
+    <script type="text/javascript">
+        var scroll = document.querySelector('.curve');
+        window.addEventListener('scroll', function () {
+            var value = 1 + window.scrollY/ -500;
+            scroll.style.transform = `scaleY(${value})`;
+        })
+    </script>
+</body>
+</html>

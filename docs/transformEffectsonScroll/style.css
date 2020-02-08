@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body{
+    height: 200vh;
+    background: #111;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 90px); /*a los 100% (+-*'/') 200px height: calc(100% - 200px); pero no funciona*/
+    background: #2abbff;
+}
+
+section .curve{
+    position: absolute;
+    bottom: -200px;
+    height: 200px;
+    width: 100%;
+    transform-origin: top;
+}
+
+section .curve img{
+    width: 100%;
+}
+
+section p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   font-size: 30px;
+   text-transform: uppercase;
+   font-family: 'Poppins', sans-serif;
+}
