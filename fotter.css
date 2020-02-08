@@ -6,11 +6,12 @@ footer{
     position: absolute;
     bottom: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 
 footer .titulo{
     margin-top: 8px;
-    color: rgb(255, 255, 255);
+    color: rgb(75, 105, 116);
 }
 
 footer a{
